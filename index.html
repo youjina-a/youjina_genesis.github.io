@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="images/pbcon.ico" type="image/x-icon">
+    <link rel="icon" href="images/pbcon.ico" type="image/x-icon">
+    <script defer src="js/jenesis.js"></script>
+    <script defer src="js/slide2.js"></script>
+</head>
+<style type="text/css">
+    @font-face {
+        font-family: Segoe UI-Bold;
+        src: url('font/SegoeUI-Bold.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: SegoeUI-Light;
+        src: url('font/SegoeUI-Light.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: SegoeUI-Semilight;
+        src: url('font/SegoeUI-Semilight.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: SegoeUI;
+        src: url('font/SegoeUI.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: SegoeUIBlack;
+        src: url('font/SegoeUIBlack.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: Helvetica95-Black;
+        src: url('font/Helvetica95-Black.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: Helvetica75-Bold;
+        src: url('font/Helvetica75-Bold.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: TimesNewRomanPS-BoldMT;
+        src: url('font/TimesNewRomanPS-BoldMT.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: TimesNewRomanPS-ItalicMT;
+        src: url('font/TimesNewRomanPS-ItalicMT.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: TimesNewRomanPSMT;
+        src: url('font/TimesNewRomanPSMT.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: TimesNewRomanPS-BoldItalicMT;
+        src: url('font/TimesNewRomanPS-BoldItalicMT.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: Butler;
+        src: url('font/Butler.woff') format('woff');
+    }
+</style>
+
+<body>
+    <div id="wrap">
+        <!-- header_nav -->
+        <header>
+            <div>
+                <a href="ex45_slideshow.html"><img src="images/logo.png" alt="제네시스"></a>
+            </div>
+            <div id="nav">
+                <div id="nav_center">
+                    <p>VIEW ALL SERVICES</p>
+                    <span>02 / 03</span>
+                </div>
+                <div id="nav_right">
+                    <a href="#">Sign in</a>
+                    <a href="#">Menu</a>
+                    <a href="#"><img src="images/menu_right.png" alt="메뉴"></a>
+                </div>
+        </header>
+        <!--따라다니는 좌우 메뉴들 -->
+        <div id="position_fixed">
+            <div id="left_menu">
+                <ul>
+                    <li><img src="images/EN_arrow.png" alt="화살표"></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">KR</a></li>
+                </ul>
+                <p>Start a Project</p>
+                <div></div>
+                <ul>
+                    <li>Contact us</li>
+                    <li><img src="images/more_.png" alt="화살표"></li>
+                    <li>more</li>
+                </ul>
+            </div>
+            <ul id="right_menu">
+                <ul>
+                    <li><img src="images/sound.png" alt="사운드"></li>
+                    <li>sound on</li>
+                </ul>
+                <p>06:29</p>
+                <div>
+                    <img src="images/Rectangle.png" alt="사각형">
+                </div>
+            </ul>
+        </div>
+        <!-- main_1 -->
+        <div id="main_1">
+            <div id="title_video">
+                <div class="title">
+                    <p> As our<br>name implies,<br>Genesis<br>embraces<br>creation.</p>
+                </div>
+                <div id="video">
+                    <div id="video_arrow">
+                        <a href="#"><img src="images/video_playbuttun.png" alt="비디오클릭"></a>
+                    </div>
+                    <div id="bg"></div>
+                    <video preload="auto" autoplay loop controls muted poster="images/video_poster.png" width="1268px" height="737px">
+                        <source src="images/videoplayback.mp4" type="video/mp4" ></video>
+                    </video>
+                </div>
+            </div>
+            <div id="popup">
+                <ul>
+
+                    <li onclick="delate()">
+                        <a href="#"><img src="images/X.png" alt="팝업창 닫기"></a>
+                    </li>
+                    <li>Announce</li>
+                    <li>Genesis Website Login<br>Change notice.</li>
+                    <li>Upon saying, thank you to<br>all customers who are using<br>the Genesis Website.</li>
+                    <li><img src="images/popup.png" alt="팝업창 더보기"></li>
+                </ul>
+            </div>
+            <div id="main_1-1">
+                <div class="title_leftbg">
+                    <div class="title_left">
+                        <p>Step into a<br>contemporary<br>space<br>eflecting </p>
+                        <p><span>the design<br>and authenticity</span></p>
+                        <p>of Genesis.</p>
+                    </div>
+                </div>
+                <div id="main_1-1_text">
+                    <div></div>
+                    <p><span>We strive for designs that connect <br>
+                        emotionally </span>with our customers at all<br> levels through perfect proportions,<br> precision craftsmanship and attention<br> to detail.</p>
+                </div>
+                <div id="main_1-1_img">
+                    <img src="images/gv80(1).png" alt="gv80">
+                </div>
+                <div id="main_1-1_link">
+                    <a href="#"><img src="images/main_1-1 link(2).png" alt="링크 화살표"></a>
+                    <p>Learn more<br>about me</p>
+                </div>
+            </div>
+            <div id="main_1-2">
+                <div id="main_1-2_text1">
+                    <p>Check out<br>shopping<br>work</p>
+                </div>
+                <div id="main_1-2_text2">
+                    <p>Your daily life<br>will be special the moment<br>you select GENESIS.</p>
+                    <img src="images/main_1-2 text arrow.png" alt="화살표">
+                    <p>We believe that every drive deserves<br>to be a discovery.</p>
+                </div>
+                <div id="main_1-2_img">
+                    <img src="images/gv80(2).png" alt="gv80">
+                </div>
+                <div id="main_1-2_arrow">
+                    <a href="#"><img src="images/main_1-2 arrow.png" alt="화살표"></a>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div id="main_2">
+            <div class="main_tit">
+                <h3>OUR VISION AND MISSION</h3>
+            </div>
+            <ul class="main_2_nav">
+                <li>01</li>
+                <li>Work</li>
+                <li><span>Vision</span> Development & Design</li>
+                <li><span>Launched</span> 2019</li>
+                <li><span></span>Go to website</li>
+            </ul>
+            <div class="main_2_Bigtit">
+                <p class="Bigtit_p"><span>At Genesis,</span> we strive to create</br>
+                    the finest automobiles and related</br>
+                    products and services for</br>
+                    connoisseurs around the globe.
+                </p>
+            </div>
+            <ul>
+                <li><img src="images/main_2_arrow.png" alt="전페이지"></li>
+                <li><img src="images/main_2_01.png" alt="제네시스"></li>
+                <!-- <li><img src="images/main_2_02.png" alt="제네시스"></li>
+                <li><img src="images/main_2_03.png" alt="제네시스"></li>
+                <li><img src="images/main_2_04.png" alt="제네시스"></li>
+                <li><img src="images/main_2_05.png" alt="제네시스"></li> -->
+                <li><img src="images/main_2_arrow.png" alt="전페이지"></li>
+            </ul>
+            <div>
+                <p>Recognitions</p>
+                <ul class="awww">
+                    <li>awwwards.</li>
+                    <li>ARCHITIZER A + AWARD <span>00000 00</span></li>
+                    <li>2019</li>
+                    <li>View</li>
+                </ul>
+                <ul>
+                    <li>awwwards.</li>
+                    <li>International Forum Design Award</li>
+                    <li>2019</li>
+                    <li>View</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main_3">
+            <div>
+                <p>Stress-free</br>
+                    customer</br>
+                    experience.</br>
+                    & Refined</br>
+                    Performance</p>
+                <a href="#"><img src="images/main_3_arrow.png" alt="화살표"></a>
+                <ul>
+                    <li>We always explore ways to bring our brand into customer’s life in harmonious way, realizing</br>
+                        a stress-free environment through challenging the status quo. </li>
+                    <li>We never stop seeking new combinations for harmonizing both dynamic performance and comfort,</br>
+                        providing refined driving emotion unique to the Genesis brand through exploring great ideas.
+                    </li>
+                    <li>As G90 awarded the 2020 TOP Safety Pick + from IIHS, GENESIS is the only brand in the industry with</br>
+                        an entire lineup of TOP SAFETY PICK+ rated vehicles.</li>
+                </ul>
+                <p>* For G70 models built after December 2019.</p>
+            </div>
+        </div>
+        <div id="main_4">
+            <div class="main_tit">
+                <h3>PRESTIGIOUS PROPORTION</h3>
+                <p>Elegantly sculpted to preserve iconic rear-wheel-drive proportions, Genesis vehicles captivate with</br>
+                    their unique and distinctive design language.</br>
+                    Meticulous attention to detail and an unparalleled level of refinement endow Genesis with a modern,</br>
+                    yet timeless appeal.</p>
+            </div>
+            <ul>
+                <li><span>1</span><img src="images/main_4_logo(1).png" alt="로고1"></li>
+                <li><span>2</span><img src="images/main_4_logo(2).png" alt="로고2"></li>
+                <li><span>3</span><img src="images/main_4_logo(3).png" alt="로고3"></li>
+                <li><span>4</span><img src="images/main_4_logo(4).png" alt="로고4"></li>
+            </ul>
+            <ul class="main_4_ell">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <div>About us</div>
+        </div>
+        <div id="main_5">
+            <div class="main_tit">
+                <h3>Explore models</h3>
+            </div>
+            <div id="main_5_1">
+                <img src="images/main_5_1(1).png" alt="제네시스 자동차">
+                <p>First SUV</p>
+                <p>GV80</p>
+                <ul>
+                    <li><span></span>Specification</li>
+                    <li>The GV80, the first SUV by Genesis, begins a new</br>
+                        journey with its unique athletic elegance, progressive</br>
+                        philosophy and vision inspired by you.
+                    </li>
+                    <li> Learn more</li>
+                </ul>
+                <div>
+                    <img src="images/main_5_arrow(t).png" alt="위쪽 화살표">
+                    <img src="images/main_5_arrow.png" alt="아래쪽 화살표">
+                </div>
+            </div>
+            <div id="main_5_2">
+                <img src="images/main_5_2(1).png" alt="제네시스 자동차">
+                <p>Driving</p>
+                <div>
+                    <img src="images/main_5_arrow(left).png" alt="왼쪽 화살표">
+                    <img src="images/main_5_arrow(right).png" alt="오른쪽 화살표">
+                </div>
+                <ul>
+                    <li>THE POWER TO</br>
+                        GO PLACES</li>
+                    <li>This unseen, dynamically shaped</br>
+                        SUV, the GV80, with its exceptional driving</br>
+                        performance boasts unrivaled presence.</br>
+                        The GV80 opens the way to limitless journeys</br>
+                        with its balanced</br>
+                        and powerful performancedelivering driving pleasure.</li>
+                    <li>Genesis GV80 uses AWD systems</br>
+                        and electronic slip</br>
+                        differentials(E-LSD) to</br>
+                        distribute the optimum drive power</br>
+                        to various terrain and driving conditions,</br>
+                        ensuring stable traction and</br>
+                        excellent off-road performance.</li>
+                </ul>
+                <div>
+                    <p>TERRAIN MODE</p>
+                    <p>PREVIEW ECS</p>
+                </div>
+            </div>
+        </div>
+        <div id="main_6">
+            <ul>
+                <li>Introducing</li>
+                <li>Preview CES
+                    <div></div>
+                </li>
+                <li>Suspension</li>
+                <li>Technology</li>
+            </ul>
+            <div class="main_6_Bigtit">
+                <p class="Bigtit_6">D<span>ynamic</span>al</p>
+                <img src="images/main_6_1.png" alt="제네시스 흑백사진">
+            </div>
+            <ul>
+                <li>Scroll
+                    <div></div>
+                </li>
+                <li>PEAK PERFORMANCE WHEREVER THE ROAD TAKES YOU</li>
+            </ul>
+        </div>
+        <div id="main_7">
+            <ul class="main_7_var var1">
+                <li>Introducing</li>
+                <li>Preview CES
+                    <div></div>
+                </li>
+                <li>Suspension</li>
+                <li>Technology</li>
+            </ul>
+            <div>
+                <p>GV80.</p>
+                <p>POWER TO</br>
+                    GO</br>
+                    PLACES</p>
+                <span>밑줄</span>
+                <ul>
+                    <li>Preview ECS</li>
+                    <li>Performance</li>
+                    <li>Terrain mode</li>
+                    <li>Active road nosie control</li>
+                    <li>Build to perform</li>
+                    <li>Engine Line-Up</li>
+                    <li>AWD systems</li>
+                </ul>
+                <ul>
+                    <li>The GV80 opens the way</br>
+                        to limitless journeys</br>
+                        with its balanced and</br>
+                        powerful performance</br>
+                        delivering driving</br>
+                        pleasure.</li>
+                    <li>The Electronically Controlled Suspension</br>
+                        with Road Preview actively adjusts the GV80’s</br>
+                        performance characteristics to deliver the smoothest</br>
+                        possible drive.<span> Using a front camera to spot</br>
+                        potential potholes,</span> the system adapts</br>
+                        the damping force of the suspension to</br>
+                        comfortably<span> accommodate obstacles </span>and</br>
+                        educe wheel impact from aftershocks. A feat of</br>
+                        innovation, it also combines the camera with</br>
+                        map navigation data to detect approaching</br>
+                        speed bumps.</li>
+                </ul>
+            </div>
+            <ul class="main_7_var var2">
+                <li>Scroll
+                    <div></div>
+                </li>
+                <li>PEAK PERFORMANCE WHEREVER THE ROAD TAKES YOU</li>
+            </ul>
+        </div>
+        <div id="main_8">
+            <div class="main_tit">
+                <h3>Design models</h3>
+            </div>
+            <span></span>
+            <div class="yellow_box">
+                <p>See more pictures</p>
+                <img src="images//main_8_plus.png" alt="더보기">
+            </div>
+            <div class="main_8_photo">
+                <img src="images/main_8_01.png" alt="제네시스흑백">
+                <img src="images/main_8_04.jpg.png" alt="제네시스흑백">
+                <img src="images/main_8_05.png" alt="제네시스흑백">
+
+            </div>
+            <ul>
+                <li>Redefining</br>
+                    the SUV</li>
+                <li>G-MATRIX</li>
+            </ul>
+            <ul>
+                <li>01</li>
+                <li>/8</li>
+                <li>‘Athletic Elegance’</li>
+            </ul>
+            <div>
+                <img src="images/main_8_arrow(left).png" alt="왼쪽화살표">
+                <img src="images/main_8_arrow(right).png" alt="오른쪽화살표">
+            </div>
+            <p>GV80 gallery</p>
+        </div>
+        <div id="main_9">
+            <div>
+                <p>News and events</p>
+                <p>All posts</p>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="images/main_9_01.png" alt="제네시스자동차"></li>
+                    <li>GENESIS G80 DESIGN</li>
+                    <li>From a striking silhouette to its characteristic</br>
+                        3-spoke steering wheel, the G80 makes a</br>
+                        statement from every angle, inside and out.</li>
+                    <li><img src="images/main_9_Plus.png" alt="더보기">LEARN MORE</li>
+                </ul>
+                <ul>
+                    <li><img src="images/main_9_02.png" alt="사람"></li>
+                    <li>GENESIS OWNERS</li>
+                    <li>As a Genesis Owner, there is so much more</br>
+                        you receive than the car itself. Discover how</br>
+                        to get the full Genesis experience.</li>
+                    <li><img src="images/main_9_Plus.png" alt="더보기">LEARN MORE</li>
+                </ul>
+                <ul>
+                    <li><img src="images/main_9_03.png" alt="제네시스자동차"></li>
+                    <li>GENESIS G70 SAFETY</li>
+                    <li>The G70’s safety features support and assist</br>
+                        your drive to ensure you and those around y
+                        </br>ou are safe — leaving you to enjoy the pleas
+                        </br>ure of the drive.</li>
+                    <li><img src="images/main_9_Plus.png" alt="더보기">LEARN MORE</li>
+                </ul>
+            </div>
+            <div>
+                <img src="images/main_1-2 arrow.png" alt="위로가기">
+            </div>
+        </div>
+        <div id="main_10">
+            <div class="main_tit">
+                <h3>Discover GENESIS</h3>
+                <h4>Have A Question</h4>
+                <img src="images/main_10_arrow(1).png" alt="">
+            </div>
+            <div>
+                <p><span>Drop me a line</span>, i'd like to</br>
+                    hear from you.</p>
+                <div>
+                    <p>Would you like to follow me?</p>
+                    <ul class="sns">
+                        <li><img src="images/main_10_sns(1).png" alt="페이스북"></li>
+                        <li><img src="images/main_10_sns(2).png" alt="인스타그램"></li>
+                        <li><img src="images/main_10_sns(3).png" alt="유투브"></li>
+                    </ul>
+                </div>
+                <ul class="main_10_box">
+                    <li>Enter your email address<img src="images/main_10_arrow(2).png" alt=""></li>
+                    <li><img src="images/main_10_arrow(3).png" alt="">I accept the Privacy</li>
+                </ul>
+                <div class="main_10_logo">
+                    <img src="images/main_10_1.png" alt="제네시스로고사진">
+                    <ul>
+                        <li>Thank you for scrolling</br>
+                            all this way!</li>
+                        <li>Luxury evolved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <p>© Copyright 2020 Hyundai Motor Company. All Rights Reserved.</p>
+                <ul class="footer_logo">
+                    <li>A collaboration between</li>
+                    <li><img src="images/footer_logo(1).png" alt="현대자동차로고"></li>
+                    <li>NEW</br>
+                        THINKING.</br>
+                        NEW</br>
+                        POSSIBILITIES</br>
+                    </li>
+                    <li><img src="images/footer_logo(2).png" alt="기아자동차로고"></li>
+                </ul>
+                <ul>
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
