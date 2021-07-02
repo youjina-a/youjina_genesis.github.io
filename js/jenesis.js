@@ -64,3 +64,9 @@ addEventListener('scroll', function() {
 
     }
 })
+
+let timer = setInterval(function() {
+    let now = new Date();
+    document.querySelector('#right_menu_hours').innerText = now.getHours();
+    document.querySelector('#right_menu_min').innerText = now.getMinutes();
+}, 1000)

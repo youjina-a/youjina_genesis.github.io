@@ -11,11 +11,287 @@ body {
     margin: 0 auto;
 }
 
+
+/* 메뉴 클릭시 나타나는 메뉴화면_menu_wrap */
+
+#menu_wrap {
+    position: absolute;
+    top: 0;
+    left: -250vh;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    background-color: #141414;
+    color: #fff;
+    display: block;
+    transition: 1.5s;
+    overflow: hidden;
+}
+
+#menuBorder p {
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    top: 47.8%;
+    left: 4.4%;
+    z-index: 15;
+    opacity: 1;
+}
+
+#menuBorder span {
+    position: absolute;
+    top: 50%;
+    left: 4.4%;
+    z-index: 15;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+#menuBorder:hover>span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: 0.5s;
+    background-color: #d17944;
+}
+
+#menuBorder:hover>span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    background-color: #d17944;
+}
+
+#menuBorder:hover>p {
+    display: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+/* #menuBorder span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#menuBorder span:nth-child(2) {
+    transform: rotate(-45deg);
+} */
+
+#menu_wrap.open {
+    left: 0;
+}
+
+#menu_position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#menu_logoNav {
+    width: 80px;
+    height: 16px;
+    padding: 37px 0;
+    padding-left: 80px;
+    cursor: pointer;
+}
+
+#menu_position p {
+    position: absolute;
+    top: 20px;
+    right: 85px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    letter-spacing: 1.1px;
+}
+
+#menu_position p span {
+    font-family: 'Segoe UI';
+    font-size: 26.7px;
+    line-height: 26.7px;
+    color: #bc6735;
+    padding-left: 5px;
+    padding-top: -20px;
+}
+
+#menu_indexText {
+    display: flex;
+}
+
+#menu_indexText span {
+    font-size: 0;
+    width: 1px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 295px;
+    z-index: 40;
+}
+
+#menu_indexText .index2 span {
+    position: absolute;
+    top: 0;
+    left: 769px;
+}
+
+#menu_indexText .index3 span {
+    left: 1243px;
+}
+
+#menu_indexText ul {
+    position: absolute;
+    top: 420px;
+    left: 320px;
+    z-index: 30;
+    width: 500px;
+    height: 0px;
+}
+
+#menu_indexText .menu_index_ul2 {
+    position: absolute;
+    top: 420px;
+    left: 794px;
+    z-index: 30;
+}
+
+#menu_indexText .menu_index_ul3 {
+    position: absolute;
+    top: 420px;
+    left: 1268px;
+    z-index: 30;
+}
+
+#menu_indexText ul li:nth-child(1) {
+    font-family: 'Helvetica95-Black';
+    font-size: 90px;
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    z-index: 30;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#menu_indexText .menu_index_ul2 li:nth-child(1) {
+    left: 1px;
+}
+
+#menu_indexText ul li:nth-child(1):hover {
+    opacity: 1;
+}
+
+#menu_indexText ul li:nth-child(2):hover {
+    opacity: 1;
+    color: #d17944;
+}
+
+#menu_indexText ul li:nth-child(3):hover {
+    opacity: 1;
+}
+
+#menu_indexText ul li:nth-child(2) {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 190px;
+    left: 0;
+    z-index: 30;
+    cursor: pointer;
+}
+
+#menu_indexText ul li:nth-child(3) {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    z-index: 30;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#menu_indexText ul li:nth-child(4) {
+    position: absolute;
+    top: -200px;
+    left: -120px;
+    z-index: 29;
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+#menu_indexText ul li:nth-child(1):hover~li:nth-child(4) {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#menu_indexImg {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+}
+
+#menu_indexImg div:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#menu_indexImg div:nth-child(2) {
+    position: absolute;
+    transform: scale(1.1);
+    top: 0px;
+    left: 710px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#menu_indexImg div:nth-child(3) {
+    position: absolute;
+    transform: scale(1.1);
+    top: 470px;
+    left: 1415px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#menu_indexImg div:nth-child(1):hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#menu_indexImg div:nth-child(2):hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+#menu_indexImg div:nth-child(3):hover img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+/* -------------------- */
+
 #wrap {
     height: 100vh;
     background-color: #141414;
     margin: 0 auto;
     color: #fff;
+}
+
+#wrap.OPEN {
+    display: none;
 }
 
 
@@ -203,8 +479,10 @@ header {
 #right_menu p {
     font-size: 22px;
     margin-top: 52px;
-    margin-left: 25px;
+    margin-left: 10px;
     z-index: 6;
+    font-weight: bold;
+    letter-spacing: 0.9;
 }
 
 #right_menu p:hover {
@@ -563,7 +841,7 @@ header {
 
 #main_1-2_arrow img {
     margin-top: 90px;
-    margin-left: 120px;
+    margin-left: 94px;
     animation: movediv 2s infinite;
 }
 

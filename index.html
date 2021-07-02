@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,7 @@
     <link rel="icon" href="images/pbcon.ico" type="image/x-icon">
     <script defer src="js/jenesis.js"></script>
     <script defer src="js/slide2.js"></script>
+    <script defer src="js/menuSlide.js"></script>
 </head>
 <style type="text/css">
     @font-face {
@@ -76,11 +76,69 @@
 </style>
 
 <body>
+    <div id="menu_wrap">
+        <div id="menuBorder" onclick="menuView()">
+            <p onclick="menuView()">CLOSE</p>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="menu_position">
+            <div id="menu_logoNav">
+                <a href="#"><img src="images/logo.png" alt="제네시스 로고" onclick="menuView()"></a>
+            </div>
+            <p>CONTACT<span>+</span></p>
+            <div id="menu_bar">
+                <span></span>
+            </div>
+            <div id="menu_indexText">
+                <div class="menu_index index1">
+                    <span>세로줄</span>
+                    <ul class="menu_index_ul1">
+                        <li>Design</li>
+                        <li>INTRODUCING GV80 DESIGN</li>
+                        <li>Dynamic volume and sporty silhouette.</br>
+                            The GV80 is the first luxury SUV of the</br>
+                            bold and progressive Genesis brand, delivering</br>
+                            a differentiated design.</li>
+                        <li> <img src="images/Layer 10.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="menu_index index2">
+                    <span>세로줄</span>
+                    <ul class="menu_index_ul2">
+                        <li>Safety</li>
+                        <li>INTRODUCING GV80 SAFETY</li>
+                        <li>Advanced driver assistance technology</br>
+                            improves safety in a variety of driving environments.</br>
+                            It helps drivers drive safely and comfortably.</li>
+                        <li> <img src="images/Layer 10.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="menu_index index3">
+                    <span>세로줄</span>
+                    <ul class="menu_index_ul3">
+                        <li>Perform</li>
+                        <li>INTRODUCING GV80 PERFORMANCE</li>
+                        <li>Differentiated composites deliver dynamic, elegant</br>
+                            premium SUV images with balanced driving performance</br>
+                            and powerful engine performance,</br>
+                            giving drivers the pleasure of driving.</li>
+                        <li> <img src="images/Layer 10.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu_indexImg">
+                <div><img src="images/menu_indeximg_1.png" alt="메뉴 자동차사진1"></div>
+                <div><img src="images/menu_indeximg_2.png" alt="메뉴 자동차사진2"></div>
+                <div><img src="images/menu_indeximg_3.png" alt="메뉴 자동차사진3"></div>
+            </div>
+        </div>
+    </div>
     <div id="wrap">
         <!-- header_nav -->
         <header>
             <div>
-                <a href="ex45_slideshow.html"><img src="images/logo.png" alt="제네시스"></a>
+                <a href="#"><img src="images/logo.png" alt="제네시스"></a>
             </div>
             <div id="nav">
                 <div id="nav_center">
@@ -89,8 +147,8 @@
                 </div>
                 <div id="nav_right">
                     <a href="#">Sign in</a>
-                    <a href="#">Menu</a>
-                    <a href="#"><img src="images/menu_right.png" alt="메뉴"></a>
+                    <a href="#" id="nav_right_Menu" onclick="menuView()">Menu</a>
+                    <a href="#"><img src="images/menu_right.png" alt="메뉴" onclick="menuView()"></a>
                 </div>
         </header>
         <!--따라다니는 좌우 메뉴들 -->
@@ -114,7 +172,7 @@
                     <li><img src="images/sound.png" alt="사운드"></li>
                     <li>sound on</li>
                 </ul>
-                <p>06:29</p>
+                <p><span id="right_menu_hours">시</span> <span>:</span> <span id="right_menu_min">분</span></p>
                 <div>
                     <img src="images/Rectangle.png" alt="사각형">
                 </div>
